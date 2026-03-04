@@ -1,0 +1,57 @@
+/* Configurações Globais */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Um cinza claro para destacar os painéis brancos */
+    color: #222;
+    margin: 0; /* Obrigatório conforme o critério de aceite  */
+}
+
+/* Você pode usar a tag header ou a classe .topo que você criou */
+header, .topo {
+    padding: 16px;
+    background: #F5A3A3;
+    color: #fff;
+}
+
+/* Estilização dos Painéis [cite: 40, 88] */
+.painel {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1); /* Corrigido: era boxshadow */
+    padding: 20px;
+    margin: 20px; /* Espaçamento entre os quadros */
+}
+
+.painel h2 {
+    font-size: 16px;
+    color: #333;
+    margin-top: 0;
+}
+
+/* Interação e Acessibilidade [cite: 55, 56, 89] */
+.footer-link {
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    color: #fff;
+    background: #F5A3A3;
+    border-radius: 4px;
+}
+
+.footer-link:focus {
+    outline: 2px solid #F5A3A3;
+}
+
+/* Links Externos e Indicador Visual [cite: 61, 68, 90] */
+a[href^="http"] {
+    color: #F5A3A3;
+    font-weight: bold;
+}
+
+a[href^="http"]::before {
+    content: "🌐 "; /* Adiciona um ícone antes do link externo */
+}
